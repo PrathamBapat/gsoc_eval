@@ -11,8 +11,8 @@ def extract(name, dataset):
     except:
       pass
 
-with open("/home/prathamesh/Desktop/CERN_work/Cern_work/file.csv", "w") as file_to_write: 
-       f = h5py.File("/home/prathamesh/Desktop/CERN_work/Cern_work/data.h5", 'r')
+with open("file.csv", "w") as file_to_write: 
+       f = h5py.File("data.h5", 'r')
        writer = csv.writer(file_to_write)
        title = ['name', 'size', 'shape', 'type'] # Creating the initial column index
        writer.writerow(title)
